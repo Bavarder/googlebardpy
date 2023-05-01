@@ -11,7 +11,7 @@ pip install googlebardpy
 ### Codeberg
 
 ```sh
-
+pip install --index-url https://codeberg.org/api/packages/Bavarder/pypi/simple/ googlebardpy
 ```
 
 ## Usage
