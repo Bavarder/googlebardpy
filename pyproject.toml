@@ -1,0 +1,41 @@
+[tool.poetry]
+name = "googlebardpy"
+version = "0.1.0"
+description = "Google Bard API in Python"
+authors = ["0xMRTT <0xMRTT@proton.me>"]
+maintainers = ["0xMRTT <0xMRTT@proton.me>"]
+readme = "README.md"
+packages = [{include = "googlebardpy"}]
+license = "GPL-3.0-or-later"
+homepage = "https://codeberg.org/Bavarder/googlebardpy"
+documentation = "https://codeberg.org/Bavarder/googlebardpy"
+keywords = ["google", "bard", "chat"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: Python",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Utilities",
+]
+repository = "https://codeberg.org/Bavarder/googlebardpy"
+
+[tool.poetry.urls]
+"Bug Tracker" = "https://codeberg.org/Bavarder/googlebardpy/issues"
+
+
+[tool.poetry.dependencies]
+python = "^3.10"
+requests = "^2.29.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[[tool.poetry.source]]
+name = "codeberg"
+url = "https://codeberg.org/api/packages/Bavarder/pypi"
+default = false
+secondary = true
